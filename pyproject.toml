@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.poetry]
+name = "DiscordBot"
+version = "0.0.1"
+description = "A DiscordBot used for the Discord Server of the University of Applied Sciences in Utrecht"
+authors = ["Open-ICT-Integrator"]
+
+[tool.poetry.dependencies]
+codecarbon = "^2.3.2"
+'discord.py' = "^2.3.2"
+PyNaCl = "^1.5.0"
+python = "^3.12.1"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^2.0.4"
+coverage = "^7.3.3"
+flake8 = "^6.1.0"
+pytest = "^7.4.3"
+
+[tool.flake8]
+docstring-convention = "pep257"
+count = "True"
+statistics = "True"
+max-line-length = 80
+ignore = "E203, W503"
+exclude = ["__pycache__,", "./.venv/", "./.git/"]

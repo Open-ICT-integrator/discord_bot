@@ -1,0 +1,33 @@
+# For more help, visit the .dockerignore file reference guide at
+# https://docs.docker.com/engine/reference/builder/#dockerignore-file
+
+# Python
+**/__pycache__
+**/.venv
+**/pyproject.toml
+
+# Docker
+**/.dockerignore
+**/docker-compose*
+**/compose*
+**/Dockerfile*
+**/docker*
+
+# IDE
+**/.vs
+**/.vscode
+**/.idea
+
+# Git/Github
+**/.git
+**/.github
+**/.gitignore
+
+# Kubernetes
+**/k8s
+
+# Documentation and markdown files
+**/*.md
+
+# Other:
+**/.env*
